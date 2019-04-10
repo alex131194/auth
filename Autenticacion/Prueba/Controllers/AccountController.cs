@@ -151,7 +151,8 @@ namespace Prueba.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, Nombre = model.Nombre, Apellidos = model.Apellidos, MailContacto = model.MailContacto, NombreEmpresa = model.NombreEmpresa,
+                ServicioT = model.ServicioT};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
