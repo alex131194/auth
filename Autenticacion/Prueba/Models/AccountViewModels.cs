@@ -66,7 +66,7 @@ namespace Prueba.Models
     {
         [Required]
         [EmailAddress]
-        [Display(Name = "Correo electrónico")]
+        [Display(Name = "Correo de registro")]
         public string Email { get; set; }
 
         [Required]
@@ -79,6 +79,28 @@ namespace Prueba.Models
         [Display(Name = "Confirmar contraseña")]
         [Compare("Password", ErrorMessage = "La contraseña y la contraseña de confirmación no coinciden.")]
         public string ConfirmPassword { get; set; }
+
+        [Required]
+        [Display(Name = "Nombre")]
+        public string Nombre { get; set; }
+
+        [Required]
+        [Display(Name = "Apellidos")]
+        public string Apellidos { get; set; }
+
+        [Required]
+        [EmailAddress]
+        [Display(Name = "Mail de contacto")]
+        public string MailContacto { get; set; }
+
+        [Required]
+        [Display(Name ="Nombre de la empresa")]
+        public string NombreEmpresa { get; set; }
+
+        [Required]
+        [Display(Name = "Servicio 24H")]
+        public string ServicioT { get; set; }
+
     }
 
     public class ResetPasswordViewModel

@@ -122,6 +122,8 @@
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -193,9 +195,49 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Datos\Tonom.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tonom.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Tonom.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tonom.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\Tonom.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tonom.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904100827291_InitialCreate.cs" />
+    <Compile Include="Migrations\201904100827291_InitialCreate.Designer.cs">
+      <DependentUpon>201904100827291_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904101223111_addnombre.cs" />
+    <Compile Include="Migrations\201904101223111_addnombre.Designer.cs">
+      <DependentUpon>201904101223111_addnombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904101348383_addapellidos.cs" />
+    <Compile Include="Migrations\201904101348383_addapellidos.Designer.cs">
+      <DependentUpon>201904101348383_addapellidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904101411414_addmailcontacto.cs" />
+    <Compile Include="Migrations\201904101411414_addmailcontacto.Designer.cs">
+      <DependentUpon>201904101411414_addmailcontacto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904101424317_addnombreempresa.cs" />
+    <Compile Include="Migrations\201904101424317_addnombreempresa.Designer.cs">
+      <DependentUpon>201904101424317_addnombreempresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904101440313_ServicioT.cs" />
+    <Compile Include="Migrations\201904101440313_ServicioT.Designer.cs">
+      <DependentUpon>201904101440313_ServicioT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -207,6 +249,16 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Datos\Tonom.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Tonom.edmx</DependentUpon>
+      <LastGenOutput>Tonom.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Datos\Tonom.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Tonom.edmx</DependentUpon>
+      <LastGenOutput>Tonom.cs</LastGenOutput>
+    </Content>
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -232,6 +284,13 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <EntityDeploy Include="Datos\Tonom.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Tonom.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Datos\Tonom.edmx.diagram">
+      <DependentUpon>Tonom.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -316,6 +375,27 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904100827291_InitialCreate.resx">
+      <DependentUpon>201904100827291_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904101223111_addnombre.resx">
+      <DependentUpon>201904101223111_addnombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904101348383_addapellidos.resx">
+      <DependentUpon>201904101348383_addapellidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904101411414_addmailcontacto.resx">
+      <DependentUpon>201904101411414_addmailcontacto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904101424317_addnombreempresa.resx">
+      <DependentUpon>201904101424317_addnombreempresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904101440313_ServicioT.resx">
+      <DependentUpon>201904101440313_ServicioT.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
