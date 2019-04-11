@@ -221,21 +221,9 @@
     <Compile Include="Migrations\201904101223111_addnombre.Designer.cs">
       <DependentUpon>201904101223111_addnombre.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201904101348383_addapellidos.cs" />
-    <Compile Include="Migrations\201904101348383_addapellidos.Designer.cs">
-      <DependentUpon>201904101348383_addapellidos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904101411414_addmailcontacto.cs" />
-    <Compile Include="Migrations\201904101411414_addmailcontacto.Designer.cs">
-      <DependentUpon>201904101411414_addmailcontacto.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904101424317_addnombreempresa.cs" />
-    <Compile Include="Migrations\201904101424317_addnombreempresa.Designer.cs">
-      <DependentUpon>201904101424317_addnombreempresa.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201904101440313_ServicioT.cs" />
-    <Compile Include="Migrations\201904101440313_ServicioT.Designer.cs">
-      <DependentUpon>201904101440313_ServicioT.cs</DependentUpon>
+    <Compile Include="Migrations\201904111552157_camposNull.cs" />
+    <Compile Include="Migrations\201904111552157_camposNull.Designer.cs">
+      <DependentUpon>201904111552157_camposNull.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -384,17 +372,8 @@
     <EmbeddedResource Include="Migrations\201904101223111_addnombre.resx">
       <DependentUpon>201904101223111_addnombre.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904101348383_addapellidos.resx">
-      <DependentUpon>201904101348383_addapellidos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904101411414_addmailcontacto.resx">
-      <DependentUpon>201904101411414_addmailcontacto.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904101424317_addnombreempresa.resx">
-      <DependentUpon>201904101424317_addnombreempresa.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201904101440313_ServicioT.resx">
-      <DependentUpon>201904101440313_ServicioT.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201904111552157_camposNull.resx">
+      <DependentUpon>201904111552157_camposNull.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -14,19 +14,19 @@ namespace Prueba.Models
         [StringLength(100)]
         public string Nombre { get; set; }
 
-        [Display(Name = "Apellidos"), Required]
+        [Display(Name = "Apellidos")]
         [StringLength(100)]
         public string Apellidos { get; set; }
 
-        [Display(Name = "Mail de Contacto"), Required]
+        [Display(Name = "Mail de Contacto")]
         [EmailAddress]
         public string MailContacto { get; set; }
 
-        [Display(Name = "Nombre de la empresa"), Required]
+        [Display(Name = "Nombre de la empresa")]
         [StringLength(100)]
         public string NombreEmpresa { get; set; }
 
-        [Display(Name = "Servicio 24H"),Required]
+        [Display(Name = "Servicio 24H")]
         [StringLength(2)]
         public string ServicioT { get; set; }
 

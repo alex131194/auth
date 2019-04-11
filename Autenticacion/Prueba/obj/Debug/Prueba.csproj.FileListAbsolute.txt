@@ -242,7 +242,5 @@ C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.pdb
 C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.InitialCreate.resources
 C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.csproj.GenerateResource.Cache
 C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.addnombre.resources
-C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.addapellidos.resources
-C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.addmailcontacto.resources
-C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.addnombreempresa.resources
-C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.ServicioT.resources
+C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.csprojResolveAssemblyReference.cache
+C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.camposNull.resources
