@@ -84,20 +84,20 @@ namespace Prueba.Models
         [Display(Name = "Nombre")]
         public string Nombre { get; set; }
 
-        [Required]
+      
         [Display(Name = "Apellidos")]
         public string Apellidos { get; set; }
 
-        [Required]
+        
         [EmailAddress]
         [Display(Name = "Mail de contacto")]
         public string MailContacto { get; set; }
 
-        [Required]
+        
         [Display(Name ="Nombre de la empresa")]
         public string NombreEmpresa { get; set; }
 
-        [Required]
+        
         [Display(Name = "Servicio 24H")]
         public string ServicioT { get; set; }
 
