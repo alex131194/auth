@@ -7,13 +7,13 @@ namespace Prueba.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class addmailcontacto : IMigrationMetadata
+    public sealed partial class camposNull : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addmailcontacto));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(camposNull));
         
         string IMigrationMetadata.Id
         {
-            get { return "201904101411414_addmailcontacto"; }
+            get { return "201904111552157_camposNull"; }
         }
         
         string IMigrationMetadata.Source
