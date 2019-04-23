@@ -13,10 +13,10 @@ namespace Prueba.Datos
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class TonomContext : DbContext
+    public partial class TonomEntities : DbContext
     {
-        public TonomContext()
-            : base("name=TonomContext")
+        public TonomEntities()
+            : base("name=TonomEntities")
         {
         }
     
@@ -25,5 +25,14 @@ namespace Prueba.Datos
             throw new UnintentionalCodeFirstException();
         }
     
+        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
+        public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
+        public virtual DbSet<AspNetUserClaims> AspNetUserClaims { get; set; }
+        public virtual DbSet<AspNetUserLogins> AspNetUserLogins { get; set; }
+        public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
+        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<Categorias> Categorias { get; set; }
+        public virtual DbSet<Clientes> Clientes { get; set; }
+        public virtual DbSet<Profesionales> Profesionales { get; set; }
     }
 }
