@@ -211,6 +211,7 @@
     <Compile Include="Datos\Categorias.cs">
       <DependentUpon>Tonom.tt</DependentUpon>
     </Compile>
+    <Compile Include="Datos\usersCP.cs" />
     <Compile Include="Datos\Clientes.cs">
       <DependentUpon>Tonom.tt</DependentUpon>
     </Compile>

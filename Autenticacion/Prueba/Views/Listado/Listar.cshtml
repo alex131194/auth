@@ -1,4 +1,4 @@
-﻿@model IEnumerable<Prueba.Datos.AspNetUsers>
+﻿@model IEnumerable<Prueba.Datos.usersCP>
 
 @{
     ViewBag.Title = "Listar";
@@ -32,6 +32,9 @@
         <th>
             @Html.DisplayNameFor(model => model.ServicioT)
         </th>
+        <th>
+            Categoría profesional
+        </th>
     </tr>
 
 @foreach (var item in Model) {
@@ -56,6 +59,9 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.ServicioT)
+        </td>
+        <td>
+            @item.Categoria
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

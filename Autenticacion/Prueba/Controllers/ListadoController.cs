@@ -16,8 +16,20 @@ namespace Prueba.Controllers
             {
                 using (var db = new TonomEntities())
                 {
-                    List<AspNetUsers> lista = db.AspNetUsers.ToList();
-                    return View(lista);
+                    var data = from a in db.AspNetUsers
+                               join c in db.Categorias on a.CodCat equals c.Id
+                               select new usersCP()
+                               {
+                                   Email = a.Email,
+                                   Nombre = a.Nombre,
+                                   Apellidos = a.Apellidos,
+                                   UserName = a.UserName,
+                                   MailContacto = a.MailContacto,
+                                   NombreEmpresa = a.NombreEmpresa,
+                                   ServicioT = a.ServicioT,
+                                   Categoria = c.NombreCat
+                               };
+                    return View(data.ToList());
                 }
 
             }

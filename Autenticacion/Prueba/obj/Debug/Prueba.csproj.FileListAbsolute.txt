@@ -243,3 +243,4 @@ C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.
 C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.csproj.GenerateResource.Cache
 C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.addnombre.resources
 C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.camposNull.resources
+C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.csprojResolveAssemblyReference.cache
