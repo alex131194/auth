@@ -394,6 +394,8 @@
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Listado\Listar.cshtml" />
+    <Content Include="Views\Home\PreRegistro.cshtml" />
+    <Content Include="Views\Account\Register2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

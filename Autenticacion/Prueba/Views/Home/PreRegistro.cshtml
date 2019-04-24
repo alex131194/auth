@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "PreRegistro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="jumbotron mt-5">
+    <h1 class="display-4">Hola, Bienvenido a Tonom</h1>
+    <p class="lead">Elige entre cliente o profesional para inciar el registro</p>
+    <hr class="my-4">
+    @Html.ActionLink("Profesional", "Register", "Account", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg col-md-5" })
+    @Html.ActionLink("Cliente", "Register2", "Account", routeValues: null, htmlAttributes: new { @class = "btn btn-primary btn-lg col-md-5" })
+</div>
+

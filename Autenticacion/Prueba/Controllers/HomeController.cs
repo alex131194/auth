@@ -26,5 +26,10 @@ namespace Prueba.Controllers
 
             return View();
         }
+
+        public ActionResult PreRegistro()
+        {
+            return View();
+        }
     }
 }

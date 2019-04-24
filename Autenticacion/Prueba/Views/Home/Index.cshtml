@@ -1,31 +1,87 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+@*<%-- Carousel --%>*@
+<div class="container mt-5">
+    <h1 class="d-xl-block d-lg-block d-md-block d-sm-none d-none">CATEGORÍAS MÁS DEMANDADAS</h1>
+    <h3 class="d-xl-none d-lg-none d-md-none d-sm-block d-none">CATEGORÍAS MÁS DEMANDADAS</h3>
+    <h5 class="d-xl-none d-lg-none d-md-none d-sm-none d-block">CATEGORÍAS MÁS DEMANDADAS</h5>
+    <div class="catDemandadas row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+            <div class="col-md-12 col-sm-12 col-xl-12 text-center catDemandada mt-md-4 mb-md-4  mt-2 mb-2">
+                <a href="#">
+                    <i class="fas fa-car fa-9x d-xl-block d-lg-block d-md-block d-sm-none d-none" title="mecánicos"></i>
+                    <i class="fas fa-car fa-6x d-xl-none d-lg-none d-md-none d-sm-block d-none" title="mecánicos"></i>
+                    <i class="fas fa-car fa-4x d-xl-none d-lg-none d-md-none d-sm-none d-block" title="mecánicos"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+            <div class="col-md-12 col-sm-12 col-xl-12 text-center catDemandada mt-md-4 mb-md-4 mt-2 mb-2">
+                <a href="#">
+                    <i class="fas fa-wrench fa-9x d-xl-block d-lg-block d-md-block d-sm-none d-none" title="fontaneros"></i>
+                    <i class="fas fa-wrench fa-6x d-xl-none d-lg-none d-md-none d-sm-block d-none" title="fontaneros"></i>
+                    <i class="fas fa-wrench fa-4x d-xl-none d-lg-none d-md-none d-sm-none d-block" title="fontaneros"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+            <div class="col-md-12 col-sm-12 col-xl-12 text-center catDemandada mt-md-4 mb-md-4 mt-2 mb-2">
+                <a href="#">
+                    <i class="fas fa-bolt fa-9x d-xl-block d-lg-block d-md-block d-sm-none d-none" title="electricistas"></i>
+                    <i class="fas fa-bolt fa-6x d-xl-none d-lg-none d-md-none d-sm-block d-none" title="electricistas"></i>
+                    <i class="fas fa-bolt fa-4x d-xl-none d-lg-none d-md-none d-sm-none d-block" title="electricistas"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+            <div class="col-md-12 col-sm-12 col-xl-12 text-center catDemandada mt-md-4 mb-md-4 mt-2 mb-2 ">
+                <a href="#">
+                    <i class="fas fa-key fa-9x d-xl-block d-lg-block d-md-block d-sm-none d-none" title="cerrajeros"></i>
+                    <i class="fas fa-key fa-6x d-xl-none d-lg-none d-md-none d-sm-block d-none" title="cerrajeros"></i>
+                    <i class="fas fa-key fa-4x d-xl-none d-lg-none d-md-none d-sm-none d-block" title="cerrajeros"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+            <div class="col-md-12 col-sm-12 col-xl-12 text-center catDemandada mt-md-4 mb-md-4 mt-2 mb-2">
+                <a href="#">
+                    <i class="fas fa-hammer fa-9x d-xl-block d-lg-block d-md-block d-sm-none d-none" title="carpinteros"></i>
+                    <i class="fas fa-hammer fa-6x d-xl-none d-lg-none d-md-none d-sm-block d-none" title="carpinteros"></i>
+                    <i class="fas fa-hammer fa-4x d-xl-none d-lg-none d-md-none d-sm-none d-block" title="carpinteros"></i>
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-4">
+            <div class="col-md-12 col-sm-12 col-xl-12 text-center catDemandada mt-md-4 mb-md-4 mt-2 mb-2">
+                <a href="#">
+                    <i class="fas fa-home fa-9x d-xl-block d-lg-block d-md-block d-sm-none d-none" title="albañiles"></i>
+                    <i class="fas fa-home fa-6x d-xl-none d-lg-none d-md-none d-sm-block d-none" title="albañiles"></i>
+                    <i class="fas fa-home fa-4x d-xl-none d-lg-none d-md-none d-sm-none d-block" title="albañiles"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 </div>
+@*<%-- Fin de carousel --%>*@
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+@*<%-- Separador --%>*@
+<div class="container separador mt-5">
+    <p class="text-center">Tonom</p>
+</div>
+@*<%-- Fin separador --%>*@
+
+@*<%-- 24 horas --%>*@
+<div class="container mt-5">
+    <div class="urgencias col-md-10 col-12 m-auto pt-3 pb-3">
+        <h1 class="text-center d-xl-block d-lg-block d-md-none d-sm-none d-none">¿Tienes una urgencia?, Profesionales 24H</h1>
+        <h3 class="text-center d-xl-none d-lg-none d-md-block d-sm-none d-none">¿Tienes una urgencia?, Profesionales 24H</h3>
+        <h4 class="text-center d-xl-none d-lg-none d-md-none d-sm-block d-block">¿Tienes una urgencia?, Profesionales 24H</h4>
+        <div class="text-center urgenciasImagen">
+            <a href="#" class="text-center">
+                <img src="img/urgencia.jpg" class="img-fluid" />
+            </a>
+        </div>
     </div>
 </div>
+@*<%-- Fin 24 horas --%>*@

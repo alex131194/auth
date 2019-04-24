@@ -1,46 +1,100 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
+   
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     @Styles.Render("~/Content/css")
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     @Scripts.Render("~/bundles/modernizr")
+
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
-                    <li>@Html.ActionLink("Listado profesionales", "Listar", "Listado")</li>
-                </ul>
-                @Html.Partial("_LoginPartial")
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-igloo"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    @Html.ActionLink("Inicio", "Index", "Home", routeValues: null, htmlAttributes: new { @class = "nav-link" })
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Cetagorías profesionales
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        @Html.ActionLink("Electricidad", "Listar", "Listado", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+                        @Html.ActionLink("Fontanería", "Listar", "Listado", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+                        @Html.ActionLink("Mecánica", "Listar", "Listado", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+                        @Html.ActionLink("Cerrajería", "Listar", "Listado", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+                        <div class="dropdown-divider"></div>
+                        @Html.ActionLink("Todas las categorías", "Listar", "Listado", routeValues: null, htmlAttributes: new { @class = "dropdown-item" })
+                    </div>
+                </li>
+                <li class="nav-item">
+
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="buscador" aria-label="Search">
+                <button class="btn btn-dark my-2 my-sm-0 text-light mr-4" type="submit">Buscar</button>
+            </form>
+            @Html.Partial("_LoginPartial")
         </div>
-    </div>
-    <div class="container body-content">
+    </nav>
+    <div class="container">
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <div class="mt-4">
+                <div class="row text-left footer">
+                    <div class="col-sm-4 col-12 pt-3 pb-2">
+                        <div class="col-12 mt-sm-0 mt-2">
+                            <span class="footerTitle">General</span><br />
+                            <a href="#">Regístrate</a><br />
+                            <a href="#">Acerca de nosotros</a><br />
+                            <a href="#">Ayuda</a><br />
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-12 pt-3 pb-2">
+                        <div class="col-12 mt-sm-0 mt-2">
+                            <span class="footerTitle">Contacto</span><br />
+                            <span><i class="fas fa-home fa-1x" style="margin-right: 5px;"></i>C/ Falsa 123</span><br />
+                            <span><i class="fas fa-envelope-open fa-1x" style="margin-right: 5px;"></i>contacto@tonom.es</span><br />
+                            <span><i class="fas fa-phone fa-1x" style="margin-right: 5px;"></i>900565656</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-4 col-12 pt-3 pb-2">
+                        <div class="col-12 mt-sm-0 mt-2">
+                            <span class="footerTitle">Redes Sociales</span><br />
+                            <a href="#"><i class="fab fa-facebook fa-1x" style="margin-right: 5px;"></i>Tonom</a><br />
+                            <a href="#"><i class="fab fa-twitter fa-1x" style="margin-right: 5px;"></i>Tonom</a><br />
+                            <a href="#"><i class="fab fa-instagram fa-1x" style="margin-right: 5px;"></i>Tonom</a><br />
+                        </div>
+                    </div>
+                    <div class="col-12 " style="padding: 0 !important">
+                        <div class="col-12 text-center mt-2 bg-dark pt-2 pb-2">
+                            <span>Tonom© @DateTime.Now.Year</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+
     @RenderSection("scripts", required: false)
 </body>
 </html>
