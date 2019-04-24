@@ -246,3 +246,4 @@ C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.
 C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.restaurar.resources
 C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.codCatString.resources
 C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.Migrations.codCatInt.resources
+C:\Users\alopez\Documents\auth\Autenticacion\Prueba\obj\Debug\Prueba.csprojResolveAssemblyReference.cache
