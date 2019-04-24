@@ -4,19 +4,19 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7c1f1a1c4c7a4b02b11bc9a764d9c907" Name="Diagram1">
-        <EntityTypeShape EntityType="TonomModel.C__MigrationHistory" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+      <Diagram DiagramId="a76f439d3ebc4263b94e131846704168" Name="Diagram1">
+        <EntityTypeShape EntityType="TonomModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="TonomModel.AspNetRoles" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="TonomModel.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="TonomModel.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="4" IsExpanded="true" />
-        <EntityTypeShape EntityType="TonomModel.AspNetUsers" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="TonomModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
-        <AssociationConnector Association="TonomModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
-        <AssociationConnector Association="TonomModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
-        <AssociationConnector Association="TonomModel.AspNetUserRoles" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="TonomModel.Categorias" Width="1.5" PointX="7.875" PointY="7.875" />
-        <EntityTypeShape EntityType="TonomModel.Clientes" Width="1.5" PointX="9.875" PointY="0.5" />
-        <EntityTypeShape EntityType="TonomModel.Profesionales" Width="1.5" PointX="10.125" PointY="6.75" />
+        <EntityTypeShape EntityType="TonomModel.AspNetUserClaims" Width="1.5" PointX="5.25" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TonomModel.AspNetUserLogins" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="TonomModel.Clientes" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TonomModel.Profesionales" Width="1.5" PointX="2.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TonomModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TonomModel.AspNetUsers" Width="1.5" PointX="3" PointY="1" />
+        <EntityTypeShape EntityType="TonomModel.Categorias" Width="1.5" PointX="7.375" PointY="0.75" />
+        <AssociationConnector Association="TonomModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="TonomModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" />
+        <AssociationConnector Association="TonomModel.AspNetUserRoles" />
         <AssociationConnector Association="TonomModel.FK_AspNetUsers_Categorias" />
       </Diagram>
     </edmx:Diagrams>

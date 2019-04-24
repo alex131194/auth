@@ -30,6 +30,10 @@ namespace Prueba.Models
         [StringLength(2)]
         public string ServicioT { get; set; }
 
+
+        [Display(Name = "Categoría profesional")]
+        public int CodCat { get; set; }
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Tenga en cuenta que el valor de authenticationType debe coincidir con el definido en CookieAuthenticationOptions.AuthenticationType

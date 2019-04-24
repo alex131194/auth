@@ -211,7 +211,6 @@
     <Compile Include="Datos\Categorias.cs">
       <DependentUpon>Tonom.tt</DependentUpon>
     </Compile>
-    <Compile Include="Datos\usersCP.cs" />
     <Compile Include="Datos\Clientes.cs">
       <DependentUpon>Tonom.tt</DependentUpon>
     </Compile>
@@ -219,6 +218,12 @@
       <DependentUpon>Tonom.tt</DependentUpon>
     </Compile>
     <Compile Include="Datos\Profesionales.cs">
+      <DependentUpon>Tonom.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\sp_helpdiagramdefinition_Result.cs">
+      <DependentUpon>Tonom.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Datos\sp_helpdiagrams_Result.cs">
       <DependentUpon>Tonom.tt</DependentUpon>
     </Compile>
     <Compile Include="Datos\sysdiagrams.cs">
@@ -239,6 +244,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Tonom.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Datos\usersCP.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -253,6 +259,18 @@
     <Compile Include="Migrations\201904111552157_camposNull.cs" />
     <Compile Include="Migrations\201904111552157_camposNull.Designer.cs">
       <DependentUpon>201904111552157_camposNull.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904240846177_restaurar.cs" />
+    <Compile Include="Migrations\201904240846177_restaurar.Designer.cs">
+      <DependentUpon>201904240846177_restaurar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904240927358_codCatString.cs" />
+    <Compile Include="Migrations\201904240927358_codCatString.Designer.cs">
+      <DependentUpon>201904240927358_codCatString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904240956564_codCatInt.cs" />
+    <Compile Include="Migrations\201904240956564_codCatInt.Designer.cs">
+      <DependentUpon>201904240956564_codCatInt.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -404,6 +422,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904111552157_camposNull.resx">
       <DependentUpon>201904111552157_camposNull.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904240846177_restaurar.resx">
+      <DependentUpon>201904240846177_restaurar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904240927358_codCatString.resx">
+      <DependentUpon>201904240927358_codCatString.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904240956564_codCatInt.resx">
+      <DependentUpon>201904240956564_codCatInt.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

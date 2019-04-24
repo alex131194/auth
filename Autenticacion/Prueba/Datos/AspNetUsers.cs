@@ -39,7 +39,7 @@ namespace Prueba.Datos
         public string MailContacto { get; set; }
         public string NombreEmpresa { get; set; }
         public string ServicioT { get; set; }
-        public Nullable<int> CodCat { get; set; }
+        public int CodCat { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AspNetUserClaims> AspNetUserClaims { get; set; }

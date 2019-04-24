@@ -18,6 +18,7 @@ namespace Prueba.Controllers
                 {
                     var data = from a in db.AspNetUsers
                                join c in db.Categorias on a.CodCat equals c.Id
+                               where c.Id > 0
                                select new usersCP()
                                {
                                    Email = a.Email,

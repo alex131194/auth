@@ -101,6 +101,10 @@ namespace Prueba.Models
         [Display(Name = "Servicio 24H")]
         public string ServicioT { get; set; }
 
+
+        [Display(Name = "Categoría profesional")]
+        public int CodCat { get; set; }
+
     }
 
     public class ResetPasswordViewModel

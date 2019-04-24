@@ -38,27 +38,35 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="AspNetUsers">
-      <EntityTypeMapping TypeName="TonomModel.AspNetUsers">
-        <MappingFragment StoreEntitySet="AspNetUsers">
-          <ScalarProperty Name="CodCat" ColumnName="CodCat" />
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="TonomModel.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Email" ColumnName="Email" />
-          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
-          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
-          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
-          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
-          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
-          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
-          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
-          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
-          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
-          <ScalarProperty Name="UserName" ColumnName="UserName" />
-          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
-          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="NombreCli" ColumnName="NombreCli" />
+          <ScalarProperty Name="ApellidosCli" ColumnName="ApellidosCli" />
+          <ScalarProperty Name="UserMailCli" ColumnName="UserMailCli" />
+          <ScalarProperty Name="UserNameCli" ColumnName="UserNameCli" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profesionales">
+      <EntityTypeMapping TypeName="TonomModel.Profesionales">
+        <MappingFragment StoreEntitySet="Profesionales">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="NombrePro" ColumnName="NombrePro" />
+          <ScalarProperty Name="ApellidosPro" ColumnName="ApellidosPro" />
+          <ScalarProperty Name="UserMailPro" ColumnName="UserMailPro" />
+          <ScalarProperty Name="UserNamePro" ColumnName="UserNamePro" />
           <ScalarProperty Name="MailContacto" ColumnName="MailContacto" />
-          <ScalarProperty Name="NombreEmpresa" ColumnName="NombreEmpresa" />
-          <ScalarProperty Name="ServicioT" ColumnName="ServicioT" />
+          <ScalarProperty Name="TelfPro" ColumnName="TelfPro" />
+          <ScalarProperty Name="NombreEmp" ColumnName="NombreEmp" />
+          <ScalarProperty Name="ServicioTot" ColumnName="ServicioTot" />
+          <ScalarProperty Name="HoraCom" ColumnName="HoraCom" />
+          <ScalarProperty Name="HoraFin" ColumnName="HoraFin" />
+          <ScalarProperty Name="PassPro" ColumnName="PassPro" />
+          <ScalarProperty Name="Imagenes" ColumnName="Imagenes" />
+          <ScalarProperty Name="CodCatPro" ColumnName="CodCatPro" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -73,14 +81,54 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <AssociationSetMapping Name="AspNetUserRoles" TypeName="TonomModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
-      <EndProperty Name="AspNetRoles">
-        <ScalarProperty Name="Id" ColumnName="RoleId" />
-      </EndProperty>
-      <EndProperty Name="AspNetUsers">
-        <ScalarProperty Name="Id" ColumnName="UserId" />
-      </EndProperty>
-    </AssociationSetMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="TonomModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="TonomModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="TonomModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="TonomModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TonomModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="TonomModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TonomModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="TonomModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="TonomModel.Store.sp_upgraddiagrams" />
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="TonomModel.AspNetUsers">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="CodCat" ColumnName="CodCat" />
+          <ScalarProperty Name="ServicioT" ColumnName="ServicioT" />
+          <ScalarProperty Name="NombreEmpresa" ColumnName="NombreEmpresa" />
+          <ScalarProperty Name="MailContacto" ColumnName="MailContacto" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Categorias">
       <EntityTypeMapping TypeName="TonomModel.Categorias">
         <MappingFragment StoreEntitySet="Categorias">
@@ -89,37 +137,13 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Clientes">
-      <EntityTypeMapping TypeName="TonomModel.Clientes">
-        <MappingFragment StoreEntitySet="Clientes">
-          <ScalarProperty Name="Password" ColumnName="Password" />
-          <ScalarProperty Name="UserNameCli" ColumnName="UserNameCli" />
-          <ScalarProperty Name="UserMailCli" ColumnName="UserMailCli" />
-          <ScalarProperty Name="ApellidosCli" ColumnName="ApellidosCli" />
-          <ScalarProperty Name="NombreCli" ColumnName="NombreCli" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="Profesionales">
-      <EntityTypeMapping TypeName="TonomModel.Profesionales">
-        <MappingFragment StoreEntitySet="Profesionales">
-          <ScalarProperty Name="CodCatPro" ColumnName="CodCatPro" />
-          <ScalarProperty Name="Imagenes" ColumnName="Imagenes" />
-          <ScalarProperty Name="PassPro" ColumnName="PassPro" />
-          <ScalarProperty Name="HoraFin" ColumnName="HoraFin" />
-          <ScalarProperty Name="HoraCom" ColumnName="HoraCom" />
-          <ScalarProperty Name="ServicioTot" ColumnName="ServicioTot" />
-          <ScalarProperty Name="NombreEmp" ColumnName="NombreEmp" />
-          <ScalarProperty Name="TelfPro" ColumnName="TelfPro" />
-          <ScalarProperty Name="MailContacto" ColumnName="MailContacto" />
-          <ScalarProperty Name="UserNamePro" ColumnName="UserNamePro" />
-          <ScalarProperty Name="UserMailPro" ColumnName="UserMailPro" />
-          <ScalarProperty Name="ApellidosPro" ColumnName="ApellidosPro" />
-          <ScalarProperty Name="NombrePro" ColumnName="NombrePro" />
-          <ScalarProperty Name="Id" ColumnName="Id" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="TonomModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+    </AssociationSetMapping>
   </EntityContainerMapping>
 </Mapping>
