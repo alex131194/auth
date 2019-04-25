@@ -217,6 +217,7 @@
     <Compile Include="Datos\C__MigrationHistory.cs">
       <DependentUpon>Tonom.tt</DependentUpon>
     </Compile>
+    <Compile Include="Datos\EditUser.cs" />
     <Compile Include="Datos\Profesionales.cs">
       <DependentUpon>Tonom.tt</DependentUpon>
     </Compile>

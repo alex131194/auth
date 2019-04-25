@@ -40,5 +40,24 @@ namespace Prueba.Controllers
             }
 
         }
+
+        // GET: EditUser
+
+        public ActionResult EditUser(string id) {
+
+            try
+            {
+                using (var db = new TonomEntities())
+                {
+                    AspNetUsers usuario = db.AspNetUsers.Find(id);
+                    return View(usuario);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
+
+        }
     }
 }

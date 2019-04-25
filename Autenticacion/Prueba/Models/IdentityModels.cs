@@ -30,7 +30,6 @@ namespace Prueba.Models
         [StringLength(2)]
         public string ServicioT { get; set; }
 
-
         [Display(Name = "Categoría profesional")]
         public int CodCat { get; set; }
 
